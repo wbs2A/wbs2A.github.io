@@ -25,7 +25,7 @@
           'G-5SMMFB7G19'
         ],
         'items': [
-          'eventLabel': card_name
+          'eventLabel': card_name,      
           'category': 'EVENTO CARD MONTADORAS'
         ]
     });
