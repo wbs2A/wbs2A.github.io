@@ -4,12 +4,11 @@
 // O ambiente dispõe da jQuery 3.5.1, então caso deseje, poderá utilizá-la
 // para fazer a sua coleta.
 // Caso tenha alguma dúvida sobre o case, não hesite em entrar em contato.
-
-  window.dataLayer = window.dataLayer || [];
+window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-E7SSJ8VB0H');
+  gtag('config', 'G-5SMMFB7G19');
 
 
  $('.card-montadoras').on('click',function(e){
@@ -26,7 +25,8 @@
         ],
         'items': [
           'eventLabel': card_name,
-          'category': 'EVENTO CARD MONTADORAS'
+          'category'  : 'EVENTO CARD MONTADORAS',
+          'text'      : card_name
         ]
     });
 
