@@ -18,16 +18,17 @@ window.dataLayer = window.dataLayer || [];
         eventCategory: 'BT CARD MONTADORA',
         eventLabel: card_name
     });
+
     gtag('event', 'add_to_cart', {
         'send_to': [
           'GTM-NTD9D6T',
           'G-5SMMFB7G19'
         ],
-        'items': [
-          'eventLabel': card_name,
+        'items': {
+          'eventLabel': $(this).attr('data-name'),
           'category'  : 'EVENTO CARD MONTADORAS',
-          'text'      : card_name
-        ]
+          'text'      : $(this).attr('data-name')
+        }
     });
 
  })
