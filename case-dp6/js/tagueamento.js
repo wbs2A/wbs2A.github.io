@@ -19,6 +19,15 @@
         eventCategory: 'BT CARD MONTADORA',
         eventLabel: card_name
     });
-    gtag('event', 'click', { 'send_to': 'G-E7SSJ8VB0H' });
+    gtag('event', 'add_to_cart', {
+        'send_to': [
+          'GTM-NTD9D6T',
+          'G-5SMMFB7G19'
+        ],
+        'items': [
+          'eventLabel': card_name
+          'category': 'EVENTO CARD MONTADORAS'
+        ]
+    });
 
  })
