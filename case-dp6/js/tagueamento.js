@@ -19,7 +19,7 @@ window.dataLayer = window.dataLayer || [];
         eventLabel: card_name
     });
 
-    gtag('event', 'add_to_cart', {
+        gtag('event', 'ver_mais', {
         'send_to': [
           'GTM-NTD9D6T',
           'G-5SMMFB7G19'
