@@ -9,6 +9,9 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-5SMMFB7G19');
 
+//including analytics
+ga('create', 'UA-12345-6', 'auto');
+
 $('.card-montadoras').on('click',function(e){
     var card_name = $(this).attr('data-name')
     dataLayer.push({
@@ -17,6 +20,14 @@ $('.card-montadoras').on('click',function(e){
       'category_name' : 'analise',
       'action_name'   : 'ver_mais'
     })
+
+    ga('send', {
+      hitType: 'ver_mais',
+      eventCategory: 'analise',
+      eventAction: 'ver_mais',
+      eventLabel: card_name
+    });
+
 })
 
 $('.menu-lista-contato').on('click', function(e){
@@ -26,6 +37,12 @@ $('.menu-lista-contato').on('click', function(e){
       'category_name' : 'menu',
       'action_name'   : 'entre_em_contato'
     })
+    ga('send', {
+      hitType: 'entre_em_contato',
+      eventCategory: 'menu',
+      eventAction: 'entre_em_contato',
+      eventLabel: 'link_externo'
+    });
 })
 
 $('.menu-lista-download').on('click', function(e){
@@ -35,6 +52,12 @@ $('.menu-lista-download').on('click', function(e){
       'category_name' : 'menu',
       'action_name'   : 'download_pdf'
     })
+    ga('send', {
+      hitType: 'download_pdf',
+      eventCategory: 'menu',
+      eventAction: 'download_pdf',
+      eventLabel: 'download_pdf'
+    });
 })
 
 $(".contato :input").on('change', function(){
@@ -45,6 +68,12 @@ $(".contato :input").on('change', function(){
         'category_name' : 'contato',
         'action_name'   : field_name
     })
+    ga('send', {
+      hitType: 'preencheu',
+      eventCategory: 'contato',
+      eventAction: field_name,
+      eventLabel: 'preencheu'
+    });
 })
 
 $('.contato').on('submit', function (e){
@@ -54,4 +83,10 @@ $('.contato').on('submit', function (e){
       'category_name' : 'contato',
       'action_name'   : 'enviado'
     })
+    ga('send', {
+      hitType: 'enviado',
+      eventCategory: 'contato',
+      eventAction: 'enviado',
+      eventLabel: 'enviado'
+    });
 })
