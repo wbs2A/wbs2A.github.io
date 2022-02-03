@@ -31,8 +31,8 @@ $('.menu-lista-contato').on('click', function(e){
 $('.menu-lista-download').on('click', function(e){
     dataLayer.push({
      'event': 'download_pdf',
-      'label_name'    : 'link_externo',
+      'label_name'    : 'download_pdf',
       'category_name' : 'menu',
-      'action_name'   : 'entre_em_contato'
+      'action_name'   : 'download_pdf'
     })
 })
