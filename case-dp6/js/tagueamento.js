@@ -36,3 +36,12 @@ $('.menu-lista-download').on('click', function(e){
       'action_name'   : 'download_pdf'
     })
 })
+
+$('.contato').on('submit', function (e) {
+    dataLayer.push({
+     'event': 'enviado',
+      'label_name'    : 'enviado',
+      'category_name' : 'contato',
+      'action_name'   : 'enviado'
+    })
+})
