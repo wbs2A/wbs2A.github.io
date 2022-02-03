@@ -25,9 +25,10 @@ window.dataLayer = window.dataLayer || [];
           'G-5SMMFB7G19'
         ],
         'items': {
-          'eventLabel': $(this).attr('data-name'),
-          'category'  : 'analise',
-          'ver_mais_variable' : $(this).attr('data-name')
+          'category'  : 'EVENTO CARD MONTADORAS',
+          'Categoria' : 'analise',
+          'Ação'      : 'ver_mais'
+          'Rótulo': $(this).attr('data-name'),
         }
     });
 
