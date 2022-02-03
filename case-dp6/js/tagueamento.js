@@ -26,8 +26,8 @@ window.dataLayer = window.dataLayer || [];
         ],
         'items': {
           'eventLabel': $(this).attr('data-name'),
-          'category'  : 'EVENTO CARD MONTADORAS',
-          'text'      : $(this).attr('data-name')
+          'category'  : 'analise',
+          'ver_mais_variable' : $(this).attr('data-name')
         }
     });
 
