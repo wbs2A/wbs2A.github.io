@@ -30,7 +30,7 @@ $('.menu-lista-contato').on('click', function(e){
 
 $('.menu-lista-download').on('click', function(e){
     dataLayer.push({
-     'event': 'entre_em_contato',
+     'event': 'download_pdf',
       'label_name'    : 'link_externo',
       'category_name' : 'menu',
       'action_name'   : 'entre_em_contato'
