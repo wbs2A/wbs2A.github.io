@@ -19,7 +19,7 @@ $('.card-montadoras').on('click',function(e){
     })
 })
 
-$('.entre_em_contato').on('click', function(e){
+$('.menu-lista-contato').on('click', function(e){
     dataLayer.push({
      'event': 'entre_em_contato',
       'label_name'    : 'link_externo',
