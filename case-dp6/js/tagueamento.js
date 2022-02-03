@@ -28,7 +28,7 @@ window.dataLayer = window.dataLayer || [];
           'category'  : 'EVENTO CARD MONTADORAS',
           'Categoria' : 'analise',
           'Ação'      : 'ver_mais'
-          'Rótulo': $(this).attr('data-name'),
+          'Rótulo': $(this).attr('data-name')
         }
     });
 
