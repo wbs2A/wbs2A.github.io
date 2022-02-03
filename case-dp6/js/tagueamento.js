@@ -34,10 +34,14 @@ let action_name   = null;
       'Categoria' : 'analise',
       'Ação'      : 'ver_mais',
       'Rótulo'    : $(this).attr('data-name'),
+    }
+    });
+
+    dataLayer.push({
+     'event': 'ver_mais',
       'label_name'    : card_name,
       'category_name' : 'analise',
       'action_name'   : 'ver_mais'
-    }
-    });
+    })
 
  })
