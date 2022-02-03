@@ -37,7 +37,17 @@ $('.menu-lista-download').on('click', function(e){
     })
 })
 
-$('.contato').on('submit', function (e) {
+$(".contato :input").on('change', function(){
+    var field_name = $(this).attr('id')
+    dataLayer.push({
+        'event': 'preencheu',
+        'label_name'    : 'preencheu',
+        'category_name' : 'contato',
+        'action_name'   : field_name
+    })
+})
+
+$('.contato').on('submit', function (e){
     dataLayer.push({
      'event': 'enviado',
       'label_name'    : 'enviado',
